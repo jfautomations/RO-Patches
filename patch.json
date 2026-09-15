@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "files": [
+    {
+      "name": "manual.grf",
+      "url": "https://yourserver/manual.grf"
+    }
+  ]
+}
