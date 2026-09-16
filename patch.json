@@ -1,9 +1,4 @@
 {
-  "version": "1.0",
-  "files": [
-    {
-      "name": "manual.grf",
-      "url": "https://yourserver/manual.grf"
-    }
-  ]
+  "Version": "1.0",
+  "PatchUrl": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/patch_1_0.zip"
 }
