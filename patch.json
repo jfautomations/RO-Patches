@@ -2,12 +2,16 @@
   "version": "1.0",
   "files": [
     {
-      "path": "manual.grf",
-      "url": "https://server/manual.grf"
+      "path": "Manual2.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Manual2.grf"
     },
     {
-      "path": "System/itemInfo_EN.lua",
-      "url": "https://server/itemInfo_EN.lua"
+      "path": "System/itemInfoPre.lua",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua"
+    },
+    {
+      "path": "System/itemInfoRE.lua.lua",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoRE.lua.lua"
     }
   ]
 }
