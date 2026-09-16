@@ -6,12 +6,12 @@
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Manual2.grf"
     },
     {
-      "path": "System/itemInfoPre.lua",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua"
-    },
-    {
       "path": "System/itemInfoRE.lua",
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoRE.lua"
+    },
+    {
+      "path": "System/itemInfoPre.lua",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua"
     }
   ]
 }
