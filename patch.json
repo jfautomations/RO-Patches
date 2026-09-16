@@ -1,4 +1,13 @@
 {
-  "Version": "1.0",
-  "PatchUrl": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/patch_1_0.zip"
+  "version": "1.0",
+  "files": [
+    {
+      "path": "manual.grf",
+      "url": "https://server/manual.grf"
+    },
+    {
+      "path": "System/itemInfo_EN.lua",
+      "url": "https://server/itemInfo_EN.lua"
+    }
+  ]
 }
