@@ -10,7 +10,7 @@
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua"
     },
     {
-      "path": "System/itemInfoRE.lua.lua",
+      "path": "System/itemInfoRE.lua",
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoRE.lua.lua"
     }
   ]
