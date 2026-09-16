@@ -3,15 +3,18 @@
   "files": [
     {
       "path": "Manual2.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Manual2.grf"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Manual2.grf",
+      "size": 19358
     },
     {
       "path": "System/itemInfoRE.lua",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoRE.lua"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoRE.lua",
+      "size": 19693
     },
     {
       "path": "System/itemInfoPre.lua",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua",
+      "size": 7091
     }
   ]
 }
