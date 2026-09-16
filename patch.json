@@ -1,11 +1,11 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "patchnotes":"https://pw-community.com/d/130-patch-notes/48",
   "files": [
     {
-      "path": "Manual2.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Manual2.grf",
-      "size": 19358
+      "path": "Manual.grf",
+      "url": "https://drive.usercontent.google.com/download?id=1ogeIcXqn0eHMqFw-xOwoB95iEBfHV8QI&export=download&authuser=0&confirm=t&uuid=0e5f3148-4173-4b91-a68d-ac62f0614395&at=AMrWOn18KzfPKT7ODKocYaGZtQTW:1789552167132",
+      "size": 68026
     },
     {
       "path": "System/itemInfoRE.lua",
