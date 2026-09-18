@@ -4,42 +4,90 @@
       "id": "chibi",
       "name": "Chibi Mode",
       "grf": "Chibi.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Chibi.grf"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Chibi.grf",
+      "description": "Shrinks character sprites into a cute chibi appearance while preserving animations and gameplay."
     },
     {
-      "id": "customaura",
-      "name": "Custom Aura",
-      "grf": "CustomAura.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/CustomAura.grf"
+      "id": "largekafra",
+      "name": "Large Kafra",
+      "grf": "LargeKafra.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/LargeKafra.grf",
+      "description": "Enlarges Kafra NPC sprites for improved visibility in crowded areas."
     },
     {
       "id": "giantmvp",
       "name": "Giant MVP",
       "grf": "GiantMVP.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/GiantMVP.grf"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/GiantMVP.grf",
+      "description": "Makes MVP monsters significantly larger to help players locate them quickly during hunts and events."
     },
     {
-      "id": "lgp",
-      "name": "@LGP",
-      "grf": "LGP.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/LGP.grf"
-    },
-    {
-      "id": "castleguide",
-      "name": "Castle Arrow Guide",
-      "grf": "Castle_Arrows.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Castle_Arrows.grf"
+      "id": "customaura",
+      "name": "Custom Aura",
+      "grf": "CustomAura.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/CustomAura.grf",
+      "description": "Adds enhanced aura effects around characters for a more modern visual experience."
     },
     {
       "id": "dispel",
       "name": "Custom Dispell",
       "grf": "Effect_Dispell.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Dispell.grf"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Dispell.grf",
+      "description": "Replaces the default Dispell effect with a cleaner and more noticeable animation."
+    },
+    {
+      "id": "strip",
+      "name": "Custom Strip",
+      "grf": "Effect_Strip.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Strip.grf",
+      "description": "Provides a custom visual effect when weapon, armor, shield or helmet strip skills are triggered."
     },
     {
       "id": "spirit",
       "name": "Large Spirit Spheres",
       "grf": "Effect_Spirit.grf",
-      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Spirit.grf"
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Spirit.grf",
+      "description": "Enlarges Monk and Champion spirit spheres to improve visibility during PvP and WoE."
     },
-    
+    {
+      "id": "lgp",
+      "name": "@LGP (Light Ground Particles)",
+      "grf": "LGP.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/LGP.grf",
+      "description": "Reduces unnecessary ground particle effects for improved visibility and performance during large battles."
+    },
+    {
+      "id": "castleguide",
+      "name": "Castle Arrow Guide",
+      "grf": "Castle_Arrows.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Castle_Arrows.grf",
+      "description": "Displays navigation arrows inside castles and WoE maps to help players learn routes and objectives."
+    }
+  ],
+  "greyscale": {
+    "brown": {
+      "name": "Brown Tiles",
+      "grf": "Map_Brown.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Map_Brown.grf",
+      "description": "Applies a brown-themed low-distraction ground texture to reduce visual clutter."
+    },
+    "black": {
+      "name": "Black Tiles",
+      "grf": "Map_Black.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Map_Black.grf",
+      "description": "Uses dark monochrome tiles to maximize skill visibility during WoE and PvP."
+    },
+    "gray": {
+      "name": "Gray Tiles",
+      "grf": "Map_Gray.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Map_Gray.grf",
+      "description": "Replaces colorful ground textures with neutral gray tiles for a cleaner battlefield view."
+    },
+    "flat": {
+      "name": "Flat Tiles",
+      "grf": "Map_FlatTiles.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Map_FlatTiles.grf",
+      "description": "Uses simplified flat textures to provide the clearest possible ground visibility."
+    }
+  }
+}
