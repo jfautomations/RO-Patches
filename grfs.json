@@ -1,0 +1,45 @@
+{
+  "features": [
+    {
+      "id": "chibi",
+      "name": "Chibi Mode",
+      "grf": "Chibi.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Chibi.grf"
+    },
+    {
+      "id": "customaura",
+      "name": "Custom Aura",
+      "grf": "CustomAura.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/CustomAura.grf"
+    },
+    {
+      "id": "giantmvp",
+      "name": "Giant MVP",
+      "grf": "GiantMVP.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/GiantMVP.grf"
+    },
+    {
+      "id": "lgp",
+      "name": "@LGP",
+      "grf": "LGP.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/LGP.grf"
+    },
+    {
+      "id": "castleguide",
+      "name": "Castle Arrow Guide",
+      "grf": "Castle_Arrows.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Castle_Arrows.grf"
+    },
+    {
+      "id": "dispel",
+      "name": "Custom Dispell",
+      "grf": "Effect_Dispell.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Dispell.grf"
+    },
+    {
+      "id": "spirit",
+      "name": "Large Spirit Spheres",
+      "grf": "Effect_Spirit.grf",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/Grfs/Effect_Spirit.grf"
+    },
+    
