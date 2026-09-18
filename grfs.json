@@ -1,6 +1,43 @@
 {
   "features": [
     {
+      "id": "castleguide",
+      "name": "Castle Arrow Guide",
+      "grf": "Castle_Arrows.grf",
+      "url": "https://drive.usercontent.google.com/download?id=1TfWr2AfdL-rWmAKSQYN-o_TxUJ-6D9Sd&export=download&authuser=0&confirm=t&uuid=dcf4e586-2f43-4761-a9cc-893b1dfde908&at=AMrWOn1UO_jRyiiYvrDV6VjbBWdd:1789755231185",
+      "description": "Displays navigation arrows inside castles and WoE maps to help players learn routes and objectives."
+    }
+  ],
+  {
+      "id": "greyscale_brown",
+      "name": "Brown Tiles",
+      "grf": "Map_Brown.grf",
+      "url": "https://drive.usercontent.google.com/download?id=1A_7195Dm-ZXFOOF9JfESQ3U_Qr7I4FNc&export=download&authuser=0&confirm=t&uuid=2664775a-c593-4654-b6ea-4a68e96c0484&at=AMrWOn1hu1hd94UYnUktCt0NPlK6:1789759112383",
+      "description": "Applies a brown-themed low-distraction ground texture."
+    },
+    {
+      "id": "greyscale_black",
+      "name": "Black Tiles",
+      "grf": "Map_Black.grf",
+      "url": "https://drive.usercontent.google.com/download?id=1l_q-9EkLERd0rUDa4oq4ILrS48ooWLP6&export=download&authuser=0&confirm=t&uuid=1389d633-f635-4e28-ae51-d0644dcff864&at=AMrWOn2naW5f5-ZT_BkkRpPLp3dw:1789759110501",
+      "description": "Uses dark monochrome tiles..."
+    },
+    {
+      "id": "greyscale_gray",
+      "name": "Gray Tiles",
+      "grf": "Map_Gray.grf",
+      "url": "https://drive.usercontent.google.com/download?id=1hqtNMBXzykTDYNBp0ZWVQtGoXfuzybUK&export=download&authuser=0&confirm=t&uuid=92c1b7df-7f24-46e1-9cdc-c6fe3bdc90f9&at=AMrWOn1e2ZoSiRuD2t4DCWNtBbHd:1789759115817",
+      "description": "Replaces colorful ground textures..."
+    },
+    {
+      "id": "greyscale_flat",
+      "name": "Flat Tiles",
+      "grf": "Map_FlatTiles.grf",
+      "url": "https://drive.usercontent.google.com/download?id=1_LBNIpRCykVW2iv72Qq7rAGZpGyYbfO8&export=download&authuser=0&confirm=t&uuid=72919e73-202b-4b52-9f05-de1b61e007fd&at=AMrWOn12sg67dAwv7qcWM3TTw8GM:1789759114223",
+      "description": "Uses simplified flat textures..."
+    }
+  ],
+    {
       "id": "chibi",
       "name": "Chibi Mode",
       "grf": "Chibi.grf",
@@ -56,38 +93,12 @@
       "url": "https://drive.usercontent.google.com/download?id=1Q9GVlztFTL690gZvlpk9iS0kI4w-QJ5_&export=download&authuser=0&confirm=t&uuid=9adbbf06-edf7-4e71-bbd0-a4b55d7b87e9&at=AMrWOn1r4sXhFyLApwfa_nn5j-q4:1789759106014",
       "description": "Reduces unnecessary ground particle effects for improved visibility and performance during large battles."
     },
-    {
-      "id": "castleguide",
-      "name": "Castle Arrow Guide",
-      "grf": "Castle_Arrows.grf",
-      "url": "https://drive.usercontent.google.com/download?id=1TfWr2AfdL-rWmAKSQYN-o_TxUJ-6D9Sd&export=download&authuser=0&confirm=t&uuid=dcf4e586-2f43-4761-a9cc-893b1dfde908&at=AMrWOn1UO_jRyiiYvrDV6VjbBWdd:1789755231185",
-      "description": "Displays navigation arrows inside castles and WoE maps to help players learn routes and objectives."
-    }
-  ],
+    
+
   "greyscale": {
-    "brown": {
-      "name": "Brown Tiles",
-      "grf": "Map_Brown.grf",
-      "url": "https://drive.usercontent.google.com/download?id=1A_7195Dm-ZXFOOF9JfESQ3U_Qr7I4FNc&export=download&authuser=0&confirm=t&uuid=2664775a-c593-4654-b6ea-4a68e96c0484&at=AMrWOn1hu1hd94UYnUktCt0NPlK6:1789759112383",
-      "description": "Applies a brown-themed low-distraction ground texture to reduce visual clutter."
-    },
-    "black": {
-      "name": "Black Tiles",
-      "grf": "Map_Black.grf",
-      "url": "https://drive.usercontent.google.com/download?id=1l_q-9EkLERd0rUDa4oq4ILrS48ooWLP6&export=download&authuser=0&confirm=t&uuid=1389d633-f635-4e28-ae51-d0644dcff864&at=AMrWOn2naW5f5-ZT_BkkRpPLp3dw:1789759110501",
-      "description": "Uses dark monochrome tiles to maximize skill visibility during WoE and PvP."
-    },
-    "gray": {
-      "name": "Gray Tiles",
-      "grf": "Map_Gray.grf",
-      "url": "https://drive.usercontent.google.com/download?id=1hqtNMBXzykTDYNBp0ZWVQtGoXfuzybUK&export=download&authuser=0&confirm=t&uuid=92c1b7df-7f24-46e1-9cdc-c6fe3bdc90f9&at=AMrWOn1e2ZoSiRuD2t4DCWNtBbHd:1789759115817",
-      "description": "Replaces colorful ground textures with neutral gray tiles for a cleaner battlefield view."
-    },
-    "flat": {
-      "name": "Flat Tiles",
-      "grf": "Map_FlatTiles.grf",
-      "url": "https://drive.usercontent.google.com/download?id=1_LBNIpRCykVW2iv72Qq7rAGZpGyYbfO8&export=download&authuser=0&confirm=t&uuid=72919e73-202b-4b52-9f05-de1b61e007fd&at=AMrWOn12sg67dAwv7qcWM3TTw8GM:1789759114223",
-      "description": "Uses simplified flat textures to provide the clearest possible ground visibility."
-    }
+    "brown": { ... },
+    "black": { ... },
+    "gray": { ... },
+    "flat": { ... }
   }
 }
