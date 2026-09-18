@@ -4,56 +4,56 @@
       "id": "chibi",
       "name": "Chibi Mode",
       "grf": "Chibi.grf",
-      "url": "https://drive.google.com/file/d/1BzjDaTVBe_B780Cv4ZwVM447J9uL2WAI/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1BzjDaTVBe_B780Cv4ZwVM447J9uL2WAI&export=download&authuser=0&confirm=t&uuid=06b9d524-9a94-4580-a519-97f9a75867b9&at=AMrWOn0J10AcK0xpIJ9oUOEaZxmk:1789759049878",
       "description": "Shrinks character sprites into a cute chibi appearance while preserving animations and gameplay."
     },
     {
       "id": "largekafra",
       "name": "Large Kafra",
       "grf": "LargeKafra.grf",
-      "url": "https://drive.google.com/file/d/1PX9mwvjeWRy0pqoXz7wJ3eQcIKGkYx84/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1PX9mwvjeWRy0pqoXz7wJ3eQcIKGkYx84&export=download&authuser=0&confirm=t&uuid=ce7d860e-fdd3-4cd7-a153-7e719f9a7ca7&at=AMrWOn3Bu5oizAiBKWIiL3FFa0Kl:1789759104423",
       "description": "Enlarges Kafra NPC sprites for improved visibility in crowded areas."
     },
     {
       "id": "giantmvp",
       "name": "Giant MVP",
       "grf": "GiantMVP.grf",
-      "url": "https://drive.google.com/file/d/1Cf1CTGlDVQn9mrXnCv4nFpMcDNI7M1aO/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1Cf1CTGlDVQn9mrXnCv4nFpMcDNI7M1aO&export=download&authuser=0&confirm=t&uuid=c958a93d-606a-4e5d-a761-99361a31e69f&at=AMrWOn1cM6eU2qsHXHH0NX-GvreI:1789759102609",
       "description": "Makes MVP monsters significantly larger to help players locate them quickly during hunts and events."
     },
     {
       "id": "customaura",
       "name": "Custom Aura",
       "grf": "CustomAura.grf",
-      "url": "https://drive.google.com/file/d/1UNdWI0-DADI_7AnwtJfqxNPWBPiGMPNa/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1UNdWI0-DADI_7AnwtJfqxNPWBPiGMPNa&export=download&authuser=0&confirm=t&uuid=933fc95b-dc52-47ae-b497-11939550f254&at=AMrWOn01SC_apK4YQzRKviYwrtg4:1789759053172",
       "description": "Adds enhanced aura effects around characters for a more modern visual experience."
     },
     {
       "id": "dispel",
       "name": "Custom Dispell",
       "grf": "Effect_Dispell.grf",
-      "url": "https://drive.google.com/file/d/1qyck7Ccx05VAHUkXYr2Z6r0SURyIQi0P/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1qyck7Ccx05VAHUkXYr2Z6r0SURyIQi0P&export=download&authuser=0&confirm=t&uuid=7ce33075-5721-4c0d-8bde-7799059af2de&at=AMrWOn2TSq5E395izvWCvtxwdj-5:1789759055734",
       "description": "Replaces the default Dispell effect with a cleaner and more noticeable animation."
     },
     {
       "id": "strip",
       "name": "Custom Strip",
       "grf": "Effect_Strip.grf",
-      "url": "https://drive.google.com/file/d/1wo5e-azpxrrt7x5fvzDoZ8OFTGs4ZOe8/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1wo5e-azpxrrt7x5fvzDoZ8OFTGs4ZOe8&export=download&authuser=0&confirm=t&uuid=00decd3e-ad1f-48e2-95c0-2f7ca0bbf8af&at=AMrWOn3slRS1kYpwblHm3aa31hyZ:1789759101082",
       "description": "Provides a custom visual effect when weapon, armor, shield or helmet strip skills are triggered."
     },
     {
       "id": "spirit",
       "name": "Large Spirit Spheres",
       "grf": "Effect_Spirit.grf",
-      "url": "https://drive.google.com/file/d/1AeDGhLd_isUiiBHQePsTnsC23fZuyJVT/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1AeDGhLd_isUiiBHQePsTnsC23fZuyJVT&export=download&authuser=0&confirm=t&uuid=d653e718-d01e-4a87-a2f9-df2b1fc5d0f2&at=AMrWOn1ZE3ZSSZ0yEVXHdOjpyHbz:1789759099628",
       "description": "Enlarges Monk and Champion spirit spheres to improve visibility during PvP and WoE."
     },
     {
       "id": "lgp",
       "name": "@LGP (Light Ground Particles)",
       "grf": "LGP.grf",
-      "url": "https://drive.google.com/file/d/1Q9GVlztFTL690gZvlpk9iS0kI4w-QJ5_/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1Q9GVlztFTL690gZvlpk9iS0kI4w-QJ5_&export=download&authuser=0&confirm=t&uuid=9adbbf06-edf7-4e71-bbd0-a4b55d7b87e9&at=AMrWOn1r4sXhFyLApwfa_nn5j-q4:1789759106014",
       "description": "Reduces unnecessary ground particle effects for improved visibility and performance during large battles."
     },
     {
@@ -68,25 +68,25 @@
     "brown": {
       "name": "Brown Tiles",
       "grf": "Map_Brown.grf",
-      "url": "https://drive.google.com/file/d/1A_7195Dm-ZXFOOF9JfESQ3U_Qr7I4FNc/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1A_7195Dm-ZXFOOF9JfESQ3U_Qr7I4FNc&export=download&authuser=0&confirm=t&uuid=2664775a-c593-4654-b6ea-4a68e96c0484&at=AMrWOn1hu1hd94UYnUktCt0NPlK6:1789759112383",
       "description": "Applies a brown-themed low-distraction ground texture to reduce visual clutter."
     },
     "black": {
       "name": "Black Tiles",
       "grf": "Map_Black.grf",
-      "url": "https://drive.google.com/file/d/1l_q-9EkLERd0rUDa4oq4ILrS48ooWLP6/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1l_q-9EkLERd0rUDa4oq4ILrS48ooWLP6&export=download&authuser=0&confirm=t&uuid=1389d633-f635-4e28-ae51-d0644dcff864&at=AMrWOn2naW5f5-ZT_BkkRpPLp3dw:1789759110501",
       "description": "Uses dark monochrome tiles to maximize skill visibility during WoE and PvP."
     },
     "gray": {
       "name": "Gray Tiles",
       "grf": "Map_Gray.grf",
-      "url": "https://drive.google.com/file/d/1hqtNMBXzykTDYNBp0ZWVQtGoXfuzybUK/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1hqtNMBXzykTDYNBp0ZWVQtGoXfuzybUK&export=download&authuser=0&confirm=t&uuid=92c1b7df-7f24-46e1-9cdc-c6fe3bdc90f9&at=AMrWOn1e2ZoSiRuD2t4DCWNtBbHd:1789759115817",
       "description": "Replaces colorful ground textures with neutral gray tiles for a cleaner battlefield view."
     },
     "flat": {
       "name": "Flat Tiles",
       "grf": "Map_FlatTiles.grf",
-      "url": "https://drive.google.com/file/d/1_LBNIpRCykVW2iv72Qq7rAGZpGyYbfO8/view?usp=drive_link",
+      "url": "https://drive.usercontent.google.com/download?id=1_LBNIpRCykVW2iv72Qq7rAGZpGyYbfO8&export=download&authuser=0&confirm=t&uuid=72919e73-202b-4b52-9f05-de1b61e007fd&at=AMrWOn12sg67dAwv7qcWM3TTw8GM:1789759114223",
       "description": "Uses simplified flat textures to provide the clearest possible ground visibility."
     }
   }
