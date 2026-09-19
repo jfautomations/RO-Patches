@@ -36,6 +36,27 @@
       "description": "Uses simplified flat textures..."
     },
     {
+  "id": "nohat",
+  "name": "No Headgears",
+  "grf": "NoHat.grf",
+  "url": "https://drive.usercontent.google.com/download?id=1mBLsoHEg5p1Kq9Zlg6516MsEonFuTUyU&export=download&authuser=0&confirm=t&uuid=a0dadf09-2263-41bb-bd5e-9ea680c3e886&at=AMrWOn1yyWyDCOzZmR3GZeOlx2GJ:1789846886246",
+  "description": "Hides all headgear sprites for cleaner WoE visibility."
+},
+{
+  "id": "floatingemp",
+  "name": "Floating Emperium",
+  "grf": "FloatingEmp.grf",
+  "url": "https://drive.usercontent.google.com/download?id=1NJ-XX5bouwKzENUUTnTQO0OlMjNxrLqO&export=download&authuser=0&confirm=t&uuid=b0c2bcd8-b672-4496-ae72-ade0071dacec&at=AMrWOn1QBPVB-sXgrPEKmQ3lR_Nz:1789846883797",
+  "description": "Makes the Emperium float above ground for easier targeting during WoE."
+},
+{
+  "id": "rareitems",
+  "name": "Rare Item Visibility",
+  "grf": "RareItems.grf",
+  "url": "https://drive.usercontent.google.com/download?id=1KaCN2p_4OJrNUQ58jzuKFOEqXUMvevKM&export=download&authuser=0&confirm=t&uuid=9f2cfc31-742c-450b-85d2-886ec16d3c8c&at=AMrWOn3mJSxMuPdbwDOwapmcdVEd:1789846888793",
+  "description": "Improves visibility of item drops, highlighting rare items with enhanced effects."
+},
+    {
       "id": "chibi",
       "name": "Chibi Mode",
       "grf": "Chibi.grf",
