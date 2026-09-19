@@ -1,5 +1,5 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "patchnotes":"https://pw-community.com/d/130-patch-notes/48",
   "files": [
     {
@@ -16,6 +16,11 @@
       "path": "System/itemInfoPre.lua",
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua",
       "size": 7091
+    },
+    {
+      "path": "dinput.dll",
+      "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/dinput.dll",
+      "size": 11
     }
   ]
 }
