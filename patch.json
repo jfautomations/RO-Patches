@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "patchnotes":"https://pw-community.com/d/130-patch-notes/48",
   "files": [
     {
@@ -15,7 +15,7 @@
     {
       "path": "System/itemInfoPre.lua",
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/System/itemInfoPre.lua",
-      "size": 7091
+      "size": 7093
     },
     {
       "path": "dinput.dll",
@@ -26,11 +26,6 @@
       "path": "gepard.license",
       "url": "https://raw.githubusercontent.com/jfautomations/RO-Patches/main/gepard.license",
       "size": 100
-    },
-    {
-      "path": "gepard.dll",
-      "url": "https://drive.usercontent.google.com/download?id=12S8yFQ3nGS2cqpdg3cEQZNYbXpJugfHd&export=download&authuser=0&confirm=t&uuid=e7097c50-5703-4b0f-9666-eb7db277d445&at=AMrWOn1Q1Dm7n0DHcuIsNNFcjJRh:1790094996532",
-      "size": 28274
     }
   ]
 }
