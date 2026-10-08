@@ -67660,10 +67660,10 @@ tbl = {
 		unidentifiedDescriptionName = {
 			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
 		},
-		identifiedDisplayName = "Agit Lords S1 Reward - Hat of The Sun God",
+		identifiedDisplayName = "pw2RO S1 Championship Reward - Hat of The Sun God",
 		identifiedResourceName = "태양신의모자",
 		identifiedDescriptionName = {
-			"The PW2 Agit Lords S1 Reward!",
+			"pw2RO S1 Championship Reward!",
 			"A hat that is said to",
 			"have been worn by",
 			"the god of the sun.",
@@ -68149,6 +68149,30 @@ tbl = {
 			"Increases ATK depending on the wearer's job level.",
 			"Class:^6666CC Headgear^000000",
 			"Defense:^0000FF 5^000000",
+			"Position:^6666CC Upper^000000",
+			"Weight:^009900 80^000000",
+			"Jobs:^6666CC All^000000"
+		},
+		slotCount = 0,
+		ClassNum = 380,
+		costume = false
+	},
+	[537450] = {
+		unidentifiedDisplayName = "Helmet",
+		unidentifiedResourceName = "헬름",
+		unidentifiedDescriptionName = {
+			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
+		},
+		identifiedDisplayName = "pw2RO S2 2nd Reward - Gigantic Majestic Goat",
+		identifiedResourceName = "대형마제스틱고우트",
+		identifiedDescriptionName = {
+			"pw2RO S2 2nd Reward!",
+			"A headgear forged from the horns of the Unsealed Baphomet.",
+			"Increases Physical Damage to ^6666CCDemihuman^000000 monsters by 12%.",
+			"Increases ATK depending on the wearer's job level.",
+			"STR +3, INT +1, DEX +1, VIT +2",
+			"Class:^6666CC Headgear^000000",
+			"Defense:^0000FF 7^000000",
 			"Position:^6666CC Upper^000000",
 			"Weight:^009900 80^000000",
 			"Jobs:^6666CC All^000000"
@@ -71294,6 +71318,31 @@ tbl = {
 		ClassNum = 513,
 		costume = false
 	},
+	[551850] = {
+		unidentifiedDisplayName = "Helmet",
+		unidentifiedResourceName = "헬름",
+		unidentifiedDescriptionName = {
+			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
+		},
+		identifiedDisplayName = "pw2RO S2 Championship Reward - Large Baphomet Horns",
+		identifiedResourceName = "대형마제스틱고우트2",
+		identifiedDescriptionName = {
+			"pw2RO S2 Championship Reward!",
+			"A headgear made from the horns of Baphomet.",
+			"Adds 12% tolerance against Demi-Human monster.",
+			"Increase certain amount of ATK based on wearer's Job Level.",
+			"STR +3, INT +2, Dex +2, VIT +2",
+			"Class:^6666CC Headgear^000000",
+			"Defense:^0000FF 7^000000",
+			"Position:^6666CC Upper^000000",
+			"Weight:^009900 80^000000",
+			"Level Requirement:^009900 50^000000",
+			"Jobs:^6666CC All^000000"
+		},
+		slotCount = 0,
+		ClassNum = 513,
+		costume = false
+	},
 	[5519] = {
 		unidentifiedDisplayName = "Hat",
 		unidentifiedResourceName = "캡",
@@ -72354,11 +72403,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A deceptive crown that was once used to summon monsters.",
 			"^FFFFFF_^000000",
-			"^FF0000Concept created during the Summer 2008 Create a headgear Contest.",
-			"Created by Areitus^000000",
-			"^FFFFFF_^000000",
-			"Int + 4",
-			"Mdef +10",
+			"Int + 3",
 			"Reduces cast time by 10%.",
 			"If refined to +7 or higher:",
 			"Def +2",
