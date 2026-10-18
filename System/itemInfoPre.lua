@@ -63803,7 +63803,7 @@ tbl = {
 		identifiedResourceName = "강아지모자",
 		identifiedDescriptionName = {
 			"A small brown-colored dog that sits atop your head. It's so cute you'd be barking mad to remove it.",
-			"Agi +1.",
+			"Agi +3",
 			"Randomly autocasts Level 1 ^0000FFGloria^000000 when dealing physical attack.",
 			"If base ^006600AGI^000000 at least ^0000FF77^000000:",
 			"It will cast Level 3 ^0000FFGloria^000000 instead.",
@@ -64383,6 +64383,7 @@ tbl = {
 		identifiedResourceName = "라이드워드",
 		identifiedDescriptionName = {
 			"A hat designed to mimic the look of a terrible magic book which attacks people.",
+			"Vit +3",
 			"Randomly absorbs 8% physical damage inflicted into HP.",
 			"Randomly absorbs 4% physical damage inflicted into SP.",
 			"Drains 10 HP every 5 seconds while equipped.",
@@ -66299,6 +66300,7 @@ tbl = {
 		identifiedDescriptionName = {
 			"A helmet made from a dragon's skull that provides protection against dragons.",
 			"Reduces damage taken from ^6666CCDragon^000000 monsters by 5%.",
+			"VIT +3",
 			"Class:^6666CC Headgear^000000",
 			"Defense:^0000FF 5^000000",
 			"Position:^6666CC Upper^000000",
@@ -68209,11 +68211,11 @@ tbl = {
 		unidentifiedDescriptionName = {
 			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
 		},
-		identifiedDisplayName = "Satanic Chain",
+		identifiedDisplayName = "Flying Evil Wing",
 		identifiedResourceName = "사타닉체인",
 		identifiedDescriptionName = {
 			"Satanic Wings forged with an unholy incantation.",
-			"MaxSP +120. Adds a chance of casting Curse on the user while receiving Physical Damage.",
+			"Str +2, Dex +2, MaxSP +120. Adds a chance of casting Curse on the user while receiving Physical Damage.",
 			"Class:^6666CC Headgear^000000",
 			"Defense:^0000FF 3^000000",
 			"Position:^6666CC Upper^000000",
@@ -69378,6 +69380,7 @@ tbl = {
 		identifiedResourceName = "성화관",
 		identifiedDescriptionName = {
 			"A crown with sacred fire on it.",
+			"Int +3, Dex +2, Mdef +10",
 			"Increases resistance against Fire element attack by 20%.",
 			"Enables use of Level 5 Fire Bolt.",
 			"^FF0000Unrefineable^000000",
@@ -70053,7 +70056,9 @@ tbl = {
 		identifiedDisplayName = "Evolved Whisper Mask",
 		identifiedResourceName = "진화된위스퍼마스크",
 		identifiedDescriptionName = {
-			"..."
+			"Dex +3, Int +2, Mdef 13",
+			"Increase resistance from Ghost Property attacks by 20%.",
+			"Defense:^0000FF 10^000000"
 		},
 		slotCount = 0,
 		ClassNum = 458,
@@ -70069,7 +70074,7 @@ tbl = {
 		identifiedResourceName = "대못박힌스카프",
 		identifiedDescriptionName = {
 			"A scarf with terrifying spikes.",
-			"Vit +1",
+			"Vit +2",
 			"Increases damage against Demihuman by 1%.",
 			"Increases resistance against Demihuman by 1%.",
 			"Class:^6666CC Headgear^000000",
@@ -70842,7 +70847,7 @@ tbl = {
 		identifiedResourceName = "떠돌이늑대왕투구",
 		identifiedDescriptionName = {
 			"Made out of a Wolf King's fur and feels like you're surrounded by a dignified force when worn but basically worn for its looks.",
-			"Vit +5",
+			"Vit +5 and Str +2",
 			"Flee +10",
 			"Class:^6666CC Headgear^000000",
 			"Defense:^0000FF 5^000000",
@@ -72416,7 +72421,7 @@ tbl = {
 			"Reduces after cast delay by 5%.",
 			"Class:^6666CC Headgear^000000",
 			"Defense:^0000FF 3^000000",
-			"Position:^6666CC Upper^000000",
+			"Position:^6666CC Upper and Mid^000000",
 			"Weight:^009900 30^000000",
 			"Level Requirement:^009900 85^000000",
 			"Jobs:^6666CC All^000000"
@@ -74930,10 +74935,10 @@ tbl = {
 		identifiedDisplayName = "Mysterious Pumpkin Hat",
 		identifiedResourceName = "호박모자",
 		identifiedDescriptionName = {
-			"A Halloween headgear.",
+			"A Halloween headgear costume.",
 			"It has the power to make monsters drop Pumpkin Pies when killed by its wearer.",
-			"Mdef +5.",
-			"Class:^6666CC Headgear^000000",
+			"Mdef +20, Vit +2.",
+			"Class:^6666CC Costume^000000",
 			"Defense:^0000FF 5^000000",
 			"Position:^6666CC Upper^000000",
 			"Weight:^009900 0^000000",
@@ -74942,7 +74947,7 @@ tbl = {
 		},
 		slotCount = 0,
 		ClassNum = 206,
-		costume = false
+		costume = true
 	},
 	[5669] = {
 		unidentifiedDisplayName = "Hat",
