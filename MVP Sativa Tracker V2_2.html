@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poring World MVP Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<style>
+:root{
+    --bg:#131313;
+    --panel:#1c1c1c;
+    --card:#252525;
+    --gold:#d6a84f;
+    --green:#28c76f;
+    --yellow:#ffb020;
+    --red:#ea5455;
+    --text:#e5e5e5;
+    --muted:#999;
+}
+*{ margin:0; padding:0; box-sizing:border-box; }
+body{ background:var(--bg); color:var(--text); font-family:Segoe UI,Tahoma,sans-serif; padding:20px; }
+header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:25px; }
+header h1{ color:var(--gold); }
+.live-indicator{ color:var(--green); font-weight:bold; }
+.dashboard{ display:grid; grid-template-columns:repeat(4,1fr); gap:15px; margin-bottom:25px; }
+.card{ background:var(--card); border:1px solid #333; padding:15px; border-radius:10px; }
+.card-title{ color:var(--muted); font-size:14px; }
+.card-value{ font-size:28px; margin-top:10px; }
+.table-container{ background:var(--panel); border-radius:10px; overflow:hidden; }
+table{ width:100%; border-collapse:collapse; }
+th{
+    background:#222;
+    color:var(--gold);
+    padding:8px 10px;
+    text-align:left;
+    font-size:13px;
+}
+
+td{
+    padding:6px 10px;
+    border-top:1px solid #333;
+    font-size:13px;
+}
+.badge{ padding:4px 8px; border-radius:5px; font-size:12px; }
+.badge-ocr{ background:#135c2a; }
+.badge-manual{ background:#8f5d00; }
+.status-dead{ color:var(--red); }
+.status-near{
+    color:#66ccff;
+    font-weight:bold;
+    text-shadow:0 0 8px #0088ff;
+}
+.status-window{ color:var(--yellow); }
+.status-up{ color:var(--green); }
+.update-btn{ background:var(--gold); border:none; padding:8px 12px; border-radius:5px; cursor:pointer; }
+.modal{ display:none; position:fixed; inset:0; background:rgba(0,0,0,.8); }
+.modal-content{ background:#222; width:400px; margin:100px auto; padding:20px; border-radius:10px; }
+input, select{ width:100%; padding:10px; margin-bottom:12px; background:#333; color:white; border:1px solid #555; }
+.submit-btn{ width:100%; padding:10px; background:var(--gold); border:none; cursor:pointer; }
+.spawn-active{ background:#483500; }
+@media(max-width:900px){ .dashboard{ grid-template-columns:1fr 1fr; } }
+</style>
+</head>
+
+<body>
+
+<header>
+<div>
+    <h1>Poring World MVP Tracker</h1>
+    <div id="lastSync">Connecting...</div>
+</div>
+<div class="live-indicator">● LIVE</div>
+</header>
+
+<div class="dashboard">
+<div class="card">
+    <div class="card-title">MVPs Tracked</div>
+    <div class="card-value" id="totalMvps">0</div>
+</div>
+<div class="card">
+    <div class="card-title">Spawn Windows Active</div>
+    <div class="card-value" id="activeWindows">0</div>
+</div>
+<div class="card">
+    <div class="card-title">OCR Records</div>
+    <div class="card-value" id="ocrCount">0</div>
+</div>
+<div class="card">
+    <div class="card-title">Manual Records</div>
+    <div class="card-value" id="manualCount">0</div>
+</div>
+</div>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+    <th>MVP</th>
+    <th>Status</th>
+    <th>Last Kill</th>
+    <th>Killer</th>
+    <th>Guild</th>
+    <th>Spawn Window</th>
+    <th>Source</th>
+    <th>Action</th>
+</tr>
+</thead>
+<tbody id="mvpTable">
+</tbody>
+</table>
+</div>
+
+<div class="modal" id="updateModal">
+<div class="modal-content">
+    <h2>Manual Update</h2>
+    <input id="modalMvp" readonly>
+    <input type="datetime-local" id="modalTimestamp">
+    <button class="submit-btn" onclick="submitManualUpdate()">Update</button>
+</div>
+</div>
+
+<script>
+    const SUPABASE_URL = 'https://xqaarjblanpxxalfwlpg.supabase.co';
+    const SUPABASE_KEY = 'sb_publishable_yBQ1uaqqBcDBzTKDfvQEJA_HiTd4ahm';
+
+    // Using 'client' just like your working V3 script
+    const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    // Reference MVP Spawn Definitions (Min/Max in minutes)
+    const MVP_RULES = {
+        "Mistress": { min: 60, max: 180 },
+        "Orc Lord": { min: 60, max: 180 },
+        "Drake": { min: 60, max: 180 },
+        "Orc Hero": { min: 60, max: 180 },
+        "Phreeoni": { min: 60, max: 180 },
+        "Knight of Windstorm": { min: 60, max: 180 },
+        "Doppelganger": { min: 60, max: 180 },
+        "Golden Thief Bug": { min: 90, max: 180 },
+        "Osiris": { min: 60, max: 180 },
+        "Maya": { min: 60, max: 180 },
+        "Pharaoh": { min: 60, max: 70 },
+        "Eddga": { min: 60, max: 90 },
+        "Moonlight Flower": { min: 60, max: 180 },
+        "Garm": { min: 60, max: 180 },
+        "Amon Ra": { min: 60, max: 180 },
+        "Turtle General": { min: 60, max: 120 },
+        "Evil Snake Lord": { min: 60, max: 120 },
+        "Incantation Samurai": { min: 60, max: 120 },
+        "Lord of Death": { min: 60, max: 120 },
+        "Dark Lord": { min: 60, max: 180 },
+        "Baphomet": { min: 60, max: 70 }
+    };
+
+    let latestKills = [];
+
+    function formatTime(dateObj) {
+        return dateObj.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+    }
+
+    function getStatus(
+    killTime,
+    minSpawn,
+    maxSpawn
+)
+{
+    if (!killTime)
+    {
+        return {
+            status: 'Unknown',
+            className: 'status-dead'
+        };
+    }
+
+    const now = Date.now();
+
+    const minTime =
+        killTime +
+        (minSpawn * 60000);
+
+    const maxTime =
+        killTime +
+        (maxSpawn * 60000);
+
+    // 4 minutes before spawn window
+    const nearSpawnTime =
+        minTime - (4 * 60000);
+
+    if (now < nearSpawnTime)
+    {
+        return {
+            status: 'Dead',
+            className: 'status-dead'
+        };
+    }
+
+    if (now < minTime)
+    {
+        return {
+            status: 'Near Spawn',
+            className: 'status-near'
+        };
+    }
+
+    if (now <= maxTime)
+    {
+        return {
+            status: 'Floating',
+            className: 'status-window'
+        };
+    }
+
+    return {
+        status: 'Overdue',
+        className: 'status-up'
+    };
+}
+
+    async function loadData() {
+
+    const { data, error } = await client
+        .from('mvp_latest')
+        .select('*');
+
+    if (error) {
+        console.error(error);
+        document.getElementById('lastSync').innerText =
+            'Error loading data';
+        return;
+    }
+
+        latestKills = data || [];
+
+        latestKills.sort((a, b) => {
+
+            const aRules =
+                MVP_RULES[a.mvp_name];
+
+            const bRules =
+                MVP_RULES[b.mvp_name];
+
+            if (!aRules) return 1;
+            if (!bRules) return -1;
+
+            const aNext =
+                new Date(a.kill_time).getTime() +
+                (aRules.min * 60000);
+
+            const bNext =
+                new Date(b.kill_time).getTime() +
+                (bRules.min * 60000);
+
+            return aNext - bNext;
+
+        });
+
+        renderTable();
+    }
+
+    function renderTable() {
+        const tbody = document.getElementById('mvpTable');
+        tbody.innerHTML = '';
+
+        let activeWindows = 0;
+        let ocrCount = 0;
+        let manualCount = 0;
+
+        // Loop directly through database records like V3 does, matching rules
+        latestKills.forEach(row => {
+            const mvpName = row.mvp_name;
+            const rules = MVP_RULES[mvpName] || { min: 60, max: 180 }; // Default fallback rules
+            
+            const killDate = row.kill_time ? new Date(row.kill_time) : null;
+            let statusObj = { status: 'Unknown', className: 'status-dead' };
+            let spawnWindow = 'No Data';
+
+            if (row.source === 'AUTO') ocrCount++;
+            if (row.source === 'Manual') manualCount++;
+
+            if (killDate) {
+                statusObj = getStatus(killDate.getTime(), rules.min, rules.max);
+                if (statusObj.status === 'Floating') activeWindows++;
+
+                const minDate = new Date(killDate.getTime() + rules.min * 60000);
+                const maxDate = new Date(killDate.getTime() + rules.max * 60000);
+                spawnWindow = `${formatTime(minDate)} - ${formatTime(maxDate)}`;
+            }
+
+            const sourceClass = row.source === 'Manual' ? 'badge-manual' : 'badge-ocr';
+
+            const tr = document.createElement('tr');
+            if (statusObj.status === 'Floating') tr.classList.add('spawn-active');
+
+            tr.innerHTML = `
+            <td>${mvpName}</td>
+            <td class="${statusObj.className}">${statusObj.status}</td>
+            <td>${killDate ? formatTime(killDate) : '-'}</td>
+            <td><strong>${row.killer || '-'}</strong></td>
+            <td>${row.guild || '-'}</td>
+            <td>${spawnWindow}</td>
+            <td><span class="badge ${sourceClass}">${row.source || '-'}</span></td>
+            <td><button class="update-btn" onclick="openUpdateModal('${mvpName}')">Update</button></td>
+        `;
+            tbody.appendChild(tr);
+        });
+
+        // Update Dashboard Counters
+        document.getElementById('totalMvps').innerText = latestKills.length;
+        document.getElementById('activeWindows').innerText = activeWindows;
+        document.getElementById('ocrCount').innerText = ocrCount;
+        document.getElementById('manualCount').innerText = manualCount;
+        document.getElementById('lastSync').innerText = 'Last Sync: ' + formatTime(new Date());
+    }
+
+    function openUpdateModal(mvpName) {
+        document.getElementById('modalMvp').value = mvpName;
+        document.getElementById('updateModal').style.display = 'block';
+    }
+
+    window.onclick = function(event) {
+        const modal = document.getElementById('updateModal');
+        if (event.target === modal) modal.style.display = 'none';
+    };
+
+    async function submitManualUpdate() {
+        const mvp = document.getElementById('modalMvp').value;
+        const timestamp = document.getElementById('modalTimestamp').value;
+
+        if (!timestamp) {
+            alert('Please select a time.');
+            return;
+        }
+
+        const payload = {
+            mvp_name: mvp,
+            killer: 'Manual Update',
+            guild: 'Manual',
+            kill_time: new Date(timestamp).toISOString(),
+            source: 'Manual',
+            updated_at: new Date().toISOString()
+        };
+
+        const { error } = await client.from('mvp_history').insert(payload);
+        if (error) {
+            alert(error.message);
+            return;
+        }
+
+        await client.from('mvp_latest').upsert(payload, { onConflict: 'mvp_name' });
+        document.getElementById('updateModal').style.display = 'none';
+        await loadData();
+    }
+
+    // Initial Load & Realtime Subscription
+    loadData();
+
+    try {
+        client
+            .channel('public:mvp_latest')
+            .on('postgres_changes', { event: '*', schema: 'public', table: 'mvp_latest' }, () => {
+                loadData();
+            })
+            .subscribe();
+    } catch (e) {
+        console.log('Realtime inactive, falling back to interval');
+        setInterval(loadData, 5000);
+    }
+</script>
+</body>
+</html>
