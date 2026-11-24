@@ -67848,6 +67848,30 @@ tbl = {
 		ClassNum = 368,
 		costume = false
 	},
+		[536050] = {
+		unidentifiedDisplayName = "Hairband",
+		unidentifiedResourceName = "∏”∏Æ∂Ï",
+		unidentifiedDescriptionName = {
+			"Unknown Item, can be identified by using a ^6666CCMagnifier^000000."
+		},
+		identifiedDisplayName = "pw2RO 1st Year Anniversary Black Cat Ears",
+		identifiedResourceName = "»÷ƒ…πŸ¿Œ¿«±Õ",
+		identifiedDescriptionName = {
+			"Ears of Whikebine's black cat. Very cute.",
+			"Increases critical attack damage by 12%.",
+			"Critical +5, FLEE +15, DEF -40%",
+			"Str +5, Dex +2",
+			"Class:^6666CC Headgear^000000",
+			"Defense:^0000FF 2^000000",
+			"Position:^6666CC Upper^000000",
+			"Weight:^009900 20^000000",
+			"Level Requirement:^009900 45^000000",
+			"Jobs:^6666CC All^000000"
+		},
+		slotCount = 0,
+		ClassNum = 368,
+		costume = false
+	},
 	[5361] = {
 		unidentifiedDisplayName = "Mask",
 		unidentifiedResourceName = "∏∂Ω∫≈©",
